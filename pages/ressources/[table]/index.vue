@@ -69,8 +69,8 @@ onMounted(async () => {
                                         <tr v-for="row in data" :key="row.id" class="border-t">
                                         <td v-for="key in fields" :key="key">{{ row[key] }}</td>
                                         <td>
-                                            <NuxtLink :to="`/${table}/${row.id}`">👁️</NuxtLink> |
-                                            <NuxtLink :to="`/${table}/edit/${row.id}`">✏️</NuxtLink>
+                                            <!--NuxtLink :to="`/${table}/${row.id}`">👁️</NuxtLink> |
+                                            <NuxtLink :to="`/${table}/edit/${row.id}`">✏️</NuxtLink-->
                                         </td>
                                         </tr>
                                     </tbody>
