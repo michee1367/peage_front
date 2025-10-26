@@ -6,6 +6,12 @@ const { getAll } = useApi()
 const data = ref([])
 const fields = ref([])
 import axios from "axios";
+
+definePageMeta({
+    middleware: ['auth', "can-table"]
+  })
+
+
 onMounted(async () => {
   await load()
   data.value = await getAll(table)

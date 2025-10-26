@@ -53,6 +53,7 @@ async function meProxy(event: H3Event<EventHandlerRequest>) {
 
   console.log("##################")
   console.log(url)
+  console.log(process.env)
   console.log("#############")
   try {
     if 

@@ -14,7 +14,7 @@ export const useApi = () => {
     }
   
     const create = async (table:string, data:Record<string, string>) => {
-      return await axios.post(`/api/post/${table}`, data)
+      return await axios.post(`/api/models/insert/${table}`, {props:data})
     }
   
     const update = async (table:string, id:number, data:Record<string, string>) => {

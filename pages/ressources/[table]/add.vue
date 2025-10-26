@@ -9,10 +9,10 @@ const rels = ref({})
 const form = ref({})
 
 const submit = async () => {
-    console.log(form.value)
+    //console.log(form.value)
     //return
   await create(table, form.value)
-  navigateTo(`/${table}`)
+  navigateTo(`/ressources/${table}`)
 }
 onMounted(async () => {
   await load()
